@@ -1,8 +1,13 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 const About = () => {
+  let data = useSelector((state)=>state.bread.prevvalue)
   return (
-    <div>About</div>
+    <div>
+        <p>{data} > about</p>
+
+    </div>
   )
 }
 
